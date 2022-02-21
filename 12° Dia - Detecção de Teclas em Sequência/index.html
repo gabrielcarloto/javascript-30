@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+
+  <p class="secret-code"></p>
+
+<script>
+  const text = document.querySelector('.secret-code');
+  const pressed = [];
+  const secretCode = 'peypeynegoney'
+
+  window.addEventListener('keyup', (e) => {
+    pressed.push(e.key);
+    pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+    text.innerHTML = pressed.join('');
+
+    if (pressed.join('').includes(secretCode)) {
+      cornify_add();
+    }
+  })
+</script>
+
+<style>
+  .secret-code {
+    font-family: monospace;
+    font-size: 10rem;
+    text-align: center;
+    background: #eee;
+    padding: 5rem;
+    border-radius: 0.5em;
+    width: 70vw;
+    height: 20vh;
+    margin: 2em auto;
+  }
+</style>
+</body>
+</html>
