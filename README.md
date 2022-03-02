@@ -6,4 +6,4 @@
 
 Nesse repositório estão meus arquivos do curso [JavaScript30](https://javascript30.com/), que trata dos fundamentos do JavaScript construindo uma aplicação por dia, durante 30 dias.
 
-Em cada pasta, há um `README.md` com um screenshot do site e uma lista dizendo o que aprendi (com links para artigos da MDN).
+Em cada pasta, há um `README.md` com um preview do site (quando disponível) e normalmente uma lista dizendo o que aprendi (com links para artigos da MDN).
